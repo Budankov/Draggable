@@ -53,3 +53,21 @@ body {
 	width: 100%;
 	display: block;
 }
+.loaded .gallery {
+	opacity: 1;
+}
+.loaded .header span {
+	opacity: 0;
+}
+
+/* DARK MODE OS */
+
+@media (preferens-color-scheme: dark) {
+	body {
+		background-color: var(--color-dark);
+	}
+
+	.header {
+		filter: invert(100%);
+	}
+}
