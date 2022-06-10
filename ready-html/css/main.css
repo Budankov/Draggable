@@ -5,7 +5,7 @@
 }
 
 :root {
-	--gap: 1em;
+	--gap: .5em;
 	--index: calc(1vw + 1vh);
 	--color-dark: #000;
 }
@@ -37,12 +37,17 @@ body {
 }
 
 .gallery {
+	width: 30vw;
 	column-width: 2em;
 	gap: var(--gap);
+	transform: scale(8.2);
+	will-change: transform;
+	transition: transform 1s cubic-bezier(.075, 0.1, .25, 1);
 }
 
 .gallery__item {
 	margin-bottom: var(--gap);
+	transform: scale(1.001);
 }
 
 .gallery__item img {
